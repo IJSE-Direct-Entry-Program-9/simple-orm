@@ -43,7 +43,7 @@ public class InitializeDB {
 
         for (String packageToScan : packagesToScan) {
             var packageName = packageToScan;
-            packageToScan = packagesToScan[0].replaceAll("[.]", "/");
+            packageToScan = packageToScan.replaceAll("[.]", "/");
             URL packageUrl = InitializeDB.class.getResource("/" + packageToScan);
             try {
                 File file = new File(packageUrl.toURI());

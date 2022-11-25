@@ -20,7 +20,7 @@ class InitializeDBTest {
     void initialize() throws SQLException {
         assertDoesNotThrow(() -> InitializeDB.initialize("localhost",
                 "3306", "dep9_orm", "root", "mysql",
-                "lk.ijse.dep9.orm.entity"));
+                "lk.ijse.dep9.orm.entity", "lk.ijse.dep9.orm.custom.entity"));
         assertDoesNotThrow(() ->{
             try(Connection connection = DriverManager.
                     getConnection("jdbc:mysql://localhost:3306/dep9_orm", "root", "mysql")){

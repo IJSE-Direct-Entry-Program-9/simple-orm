@@ -1,4 +1,4 @@
-package lk.ijse.dep9.orm.entity;
+package lk.ijse.dep9.orm.custom.entity;
 
 import lk.ijse.dep9.orm.annotation.Id;
 import lk.ijse.dep9.orm.annotation.Table;

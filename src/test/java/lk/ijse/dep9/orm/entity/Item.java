@@ -1,5 +1,6 @@
 package lk.ijse.dep9.orm.entity;
 
+import lk.ijse.dep9.orm.annotation.Id;
 import lk.ijse.dep9.orm.annotation.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Table
 public class Item {
+    @Id
     private String code;
     private String description;
     private int qty;
